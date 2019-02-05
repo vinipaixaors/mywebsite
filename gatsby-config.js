@@ -3,6 +3,7 @@ module.exports = {
     title: `Vinícius Paixão - Front-end developer`,
     description: `website portfólio.`,
     author: `@vinipaixaors`,
+    siteUrl: `https://www.viniciuspaixao.com.br`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -45,5 +46,6 @@ module.exports = {
         // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_PREVIEW_NAME",
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }
