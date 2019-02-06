@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Footer from "../components/Footer/footer"
+import Layout from "../components/Layout/layout"
+// import Footer from "../components/Footer/footer"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
@@ -15,8 +14,8 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-    <Footer />
+    <Link to="/curriculo/">Currículo</Link>
+    {/* <Footer /> */}
   </Layout>
 )
 

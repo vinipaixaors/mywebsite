@@ -7,9 +7,19 @@ import s from "./footer.module.styl"
 class Footer extends React.Component{
   render() {
     return (
-      <div className={s.footerBg}>
-        <span> Footer O meu caralho!!!</span>
-      </div>
+      <>
+        <section className={s.footerBg}>
+          <div></div>
+          <div></div>
+          <div className={s.container}>
+            Vinicius
+          </div>
+          © {new Date().getFullYear()} Todos direitos reservados 
+          {/* - Desenvolvido com */}
+          {` `}
+          {/* <a href="https://www.gatsbyjs.org">Gatsby</a>, por Vinícius Paixão */}
+        </section>
+      </>
     )
   }
 }
