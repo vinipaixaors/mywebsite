@@ -11,17 +11,24 @@ main
   z-index 5
   position relative
 
-  @media(max-width $screen-md)
+  @media(max-width $screen-sm)
     padding: 1rem 15px
 
 .wrapper
   display grid
   grid-template-columns 30% 70%
 
+  @media(max-width $screen-md)
+    grid-template-columns 100%
+
   & > div
     background-color #2d2e2e
     padding: 3rem 5rem
     position relative
+
+    @media(max-width $screen-sm)
+      padding 2rem 15px
+      margin 0
   
     &:nth-child(odd)
       background-color: #2b2c2c
