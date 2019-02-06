@@ -5,6 +5,55 @@
 .footerBg
   color #ccc
   margin-top 2rem
-
+  position relative
+  
   a 
     color $yellow
+
+  .headerBg 
+    background #2b2c2c
+    display block
+    position absolute
+    height 100%
+    width 50%
+    z-index 1
+  
+  .contentBg
+    background #2d2e2e
+    display block
+    position absolute
+    height 100%
+    width 50%
+    right 0
+    z-index 1
+
+  h1 
+    span 
+      display block
+      width 100%
+      line-height: 1
+      font-weight: 400
+
+      &:last-child
+        font-size: 4rem
+        font-weight: 900
+        text-transform: uppercase
+        color $yellow
+        
+  ul
+    list-style none
+    position: absolute
+    top 49.8%
+    right 0
+
+    li 
+      display inline
+      padding-right: 10px
+
+      &:last-child
+        padding-right: 0
+
+  .op8 
+    opacity .8
+    font-size: .8rem
+    padding 1rem 0 0 .25rem

@@ -2,8 +2,26 @@ main
   a
     color #e0a80d
 
-
 .container
   margin 0 auto
   max-width 1400px
-  padding 1rem 0
+  padding 1rem 0 0
+  padding-top 0
+  color #979899
+  z-index 5
+  position relative
+
+  @media(max-width $screen-md)
+    padding: 1rem 15px
+
+.wrapper
+  display grid
+  grid-template-columns 30% 70%
+
+  & > div
+    background-color #2d2e2e
+    padding: 3rem 5rem
+    position relative
+  
+    &:nth-child(odd)
+      background-color: #2b2c2c
