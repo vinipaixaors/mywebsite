@@ -23,7 +23,7 @@ module.exports = {
         short_name: `ViniDev`,
         start_url: `/`,
         background_color: `#663399`,
-        orientation: `landscape`,
+        // orientation: `portrait`,
         theme_color: `#663399`,
         display: `standalone`,
         icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
