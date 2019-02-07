@@ -1,0 +1,33 @@
+.sectionBg
+  color #ccc
+  margin-top 2rem
+  position relative
+  background-color: #2b2c2c
+
+  &:nth-child(odd)
+    background-color: #2d2e2e
+
+  
+  .container
+    @media(max-width $screen-sm)
+      padding 0
+
+  a 
+    color $yellow
+
+  .headerBg 
+    background #2b2c2c
+    display block
+    position absolute
+    height 100%
+    width 50%
+    z-index 1
+  
+  .contentBg
+    background #2d2e2e
+    display block
+    position absolute
+    height 100%
+    width 50%
+    right 0
+    z-index 1

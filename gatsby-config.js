@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Vinícius Paixão - Front-end developer`,
-    description: `website portfólio.`,
+    title: `Desenvolvedor Front-end`,
+    description: `Website portfólio de um desenvolvedor Front-end - Brasília-DF`,
     author: `@vinipaixaors`,
     siteUrl: `https://www.viniciuspaixao.com.br`,
   },
@@ -19,12 +19,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Vinícius Paixão`,
+        short_name: `vinicius`,
         start_url: `/`,
         background_color: `#663399`,
+        orientation: `landscape`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },

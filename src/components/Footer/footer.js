@@ -8,7 +8,7 @@ class Footer extends React.Component{
   render() {
     return (
       <>
-        <section className={s.footerBg}>
+        <section className={s.sectionBg}>
           <div className={s.headerBg}></div>
           <div className={s.contentBg}></div>
           
