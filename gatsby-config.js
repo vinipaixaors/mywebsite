@@ -24,7 +24,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         // orientation: `portrait`,
-        theme_color: `#663399`,
+        theme_color: `#2b2c2c`,
         display: `standalone`,
         icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
