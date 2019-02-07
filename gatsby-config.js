@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Vinícius Paixão`,
-        short_name: `vinicius`,
+        short_name: `ViniDev`,
         start_url: `/`,
         background_color: `#663399`,
         orientation: `landscape`,
