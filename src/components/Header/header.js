@@ -5,7 +5,7 @@ import s from "./header.module.styl"
 
 const Header = ({ siteTitle }) => (
   <header className={s.main}>
-    <div className={s.container}>
+    {/* <div className={s.container}>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -15,10 +15,15 @@ const Header = ({ siteTitle }) => (
           }}
         >
           Logo
-          {/* {siteTitle} */}
+          {siteTitle}
         </Link>
       </h1>
-    </div>
+    </div> */}
+    <ul className={s.navHeader}>
+      <li><Link to="/">Home</Link></li>
+      <li><Link to="/curriculo/">Currículo</Link></li>
+      <li><Link to="/portfolio/">Portfólio</Link></li>
+    </ul>
   </header>
 )
 

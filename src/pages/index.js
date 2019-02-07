@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import Layout from "../components/Layout/layout"
 // import Footer from "../components/Footer/footer"
 import Image from "../components/image"
@@ -17,19 +17,50 @@ const IndexPage = () => (
         
         <div className={s.container}>
           <div className={s.wrapper}>
-            <div></div>
-            <div></div>
+            <div>
+              <div className={s.bannerImgRight}>
+                <Image />
+              </div>
+            </div>
+
+            <div>
+              <h1>
+                <span>Vinícius</span>
+                <span>Paixão</span>
+              </h1>
+              <p>Desenvolvedor Web &amp; Front-end Expert</p>
+              <p>Now go build something great.</p>
+            </div>
           </div>
         </div>
       </section>
     </div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+
+    <div>
+      <section className={s.sectionBg}>
+        <div className={s.headerBg}></div>
+        <div className={s.contentBg}></div>
+        
+        <div className={s.container}>
+          <div className={s.wrapper}>
+            <div>
+              
+            </div>
+
+            <div>
+              <h1>
+                <span>Vinícius</span>
+                <span>Paixão</span>
+              </h1>
+              <p>Desenvolvedor Web &amp; Front-end Expert</p>
+              <p>Now go build something great.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <Link to="/curriculo/">Currículo</Link>
+    
+    
     {/* <Footer /> */}
   </Layout>
 )
