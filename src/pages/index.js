@@ -24,28 +24,53 @@ const IndexPage = () => (
             </div>
 
             <div>
-              <h1>
-                <span>Vinícius</span>
-                <span>Paixão</span>
-              </h1>
-              <p>Desenvolvedor Web &amp; Front-end Expert</p>
-              <p>Now go build something great.</p>
+              <div className={s.contentText}>
+                <h1>
+                  <span>Vinícius</span>
+                  <span>Paixão</span>
+                </h1>
+                <p>Desenvolvedor Web &amp; Front-end Expert</p>
+                <p>Now go build something great.</p>
+              </div>
+              <div className={s.contentFooter}>
+                <ul className={s.social}>
+                  <li><a href="https://github.com/vinipaixaors/">github</a></li>
+                  <li><a href="https://www.linkedin.com/in/viniciuspaixaors/">linkedin</a></li>
+                  <li><a href="https://www.instagram.com/viniciuspaixaors/">Instagram</a></li>
+                </ul>
+                <hr />
+                <ul className={s.perosnalContact}>
+                  <li>
+                    <strong>Local</strong>
+                    <span>Brasília, DF</span>
+                  </li>
+                  <li>
+                    <strong>Whatsapp</strong>
+                    <span>
+                      <a href="#ligar">(61) 9 9999-9999</a>
+                      <a href="#ligar">(61) 9 9999-9999</a>
+                    </span>
+                  </li>
+                  <li>
+                    <strong>E-mail</strong>
+                    <span><a href="mailto:vinicius.paixaors@gmail.com">vinicius.paixaors@gmail.com</a></span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </div>
 
-    <div>
+    {/* <div>
       <section className={s.sectionBg}>
         <div className={s.headerBg}></div>
         <div className={s.contentBg}></div>
         
         <div className={s.container}>
           <div className={s.wrapper}>
-            <div>
-              
-            </div>
+            <div></div>
 
             <div>
               <h1>
@@ -58,7 +83,7 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
-    </div>
+    </div> */}
     
     
     {/* <Footer /> */}

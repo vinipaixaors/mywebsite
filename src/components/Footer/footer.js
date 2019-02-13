@@ -7,7 +7,7 @@ import s from "./footer.module.styl"
 class Footer extends React.Component{
   render() {
     return (
-      <>
+      <div id="contact">
         <section className={s.footerBg}>
           <div className={s.headerBg}></div>
           <div className={s.contentBg}></div>
@@ -41,7 +41,7 @@ class Footer extends React.Component{
 
 
         </section>
-      </>
+      </div>
     )
   }
 }
