@@ -36,6 +36,7 @@ const IndexPage = () => (
                 <ul className={s.social}>
                   <li><a href="https://github.com/vinipaixaors/">github</a></li>
                   <li><a href="https://www.linkedin.com/in/viniciuspaixaors/">linkedin</a></li>
+                  <li><a href="https://profiles.udacity.com/p/10855558614">Udacity</a></li>
                   <li><a href="https://www.instagram.com/viniciuspaixaors/">Instagram</a></li>
                 </ul>
                 <hr />
