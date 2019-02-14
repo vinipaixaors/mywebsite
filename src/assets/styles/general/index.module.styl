@@ -21,12 +21,21 @@
     height calc(100vh - 56px)
     position relative
 
+    @media(max-width $screen-xs)
+      height 100%
+
     .bannerImgRight
       position absolute
       transform: translate(-50%,-50%);
       top: 50%; 
       left: 50%;
       width 250px
+
+      @media(max-width 600px)
+        position: unset
+        transform: unset
+        width 200px
+        margin 0 auto
 
     .contentText
       position absolute
@@ -35,23 +44,39 @@
       width 100%
       display block
 
+      @media(max-width 600px)
+        position: unset
+        transform: unset
+        margin-bottom 2rem
+
       h1 
         span
           display: block
-          line-height: 1
+          line-height: 0
           font-weight: 400
           font-size 3.1rem
-          // font-family: 'Advent Pro'
+          font-family: 'Advent Pro'
 
           &:nth-of-type(2)
             font-size: 8rem
             font-weight: 900
             text-transform: uppercase
             color $yellow
-            letter-spacing: -.3rem
-            line-height: .8;  
-            // font-family: sans-serif;
+            letter-spacing: -.5rem
+            line-height: 1.2
+            -moz-line-height 1.4
+            font-family: sans-serif;
             // font-family: 'Advent Pro'
+            background: linear-gradient(to bottom right, $yellow, yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            z-index: 2
+
+            @media(max-width $screen-xs)
+              font-size: 6rem
+            
+            @media(max-width $screen-xxs)
+              font-size: 5.2rem
       
       p 
         font-size 1.2rem
@@ -62,16 +87,24 @@
         padding 0 0 0 6px
         font-family: 'Advent Pro'
 
+        @media(max-width 600px)
+          padding 0
+
         &:nth-of-type(2)
           font-style: italic
 
-      
+        strong 
+          color green
+          font-weight: 600
 
     .contentFooter
       position absolute
       bottom: 0
-      width 100%
+      max-width 100%
       display block
+
+      @media(max-width 600px)
+        position: unset 
 
       .social
         list-style: none
@@ -79,9 +112,18 @@
         padding 0
         text-align: right
 
+        @media(max-width 600px)
+          text-align: left
+          margin 0 
+          padding 0
+
         li  
           display: inline-block
           margin-left: 1.5rem
+
+          @media(max-width 600px)
+            margin 0
+            padding 0 10px 0 0
 
           &:hover
             a 
@@ -89,16 +131,47 @@
 
           a 
             color #666666
-            text-decoration: none     
+            text-decoration: none   
+
+            .iconGithub  
+              // background-image url('../svg/icon-github.svg')
+              width 20px
+              height 20px
+              position relative
+
 
       .perosnalContact
         list-style: none
         margin 2rem 0 0 
         padding 0
+        height 100%
+        display: block
+
+        @media(max-width $screen-xs)
+          margin 1rem 0 0
         
+        .local
+          @media(max-width $screen-xs)
+            display: none
+
+        .whatsapp
+          @media(max-width $screen-xs)
+            span
+              a
+                display: block
+                padding 0
+
+                &:last-child
+                  display: none
+
         li  
           display: inline-block
           margin-right: 6rem
+          
+
+          @media(max-width $screen-xs)
+            width 40%
+            margin-right 0
 
           &:hover
             strong 
@@ -110,6 +183,10 @@
             font-size .7rem
             text-transform: uppercase
             letter-spacing: -.02rem
+            
+            @media(max-width $screen-xs)
+              width 100%
+
           
           span
             font-size 1rem

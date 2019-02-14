@@ -29,30 +29,30 @@ const IndexPage = () => (
                   <span>Vinícius</span>
                   <span>Paixão</span>
                 </h1>
-                <p>Desenvolvedor Web &amp; Front-end Expert</p>
-                <p>Now go build something great.</p>
+                <p><strong>Engenheiro de software</strong> e desenvolvedor Web</p>
+                <p>Front-end &amp; Designer</p>
               </div>
               <div className={s.contentFooter}>
                 <ul className={s.social}>
-                  <li><a href="https://github.com/vinipaixaors/">github</a></li>
+                  <li><a href="https://github.com/vinipaixaors/" className={s.iconGithub}> </a></li>
                   <li><a href="https://www.linkedin.com/in/viniciuspaixaors/">linkedin</a></li>
                   <li><a href="https://profiles.udacity.com/p/10855558614">Udacity</a></li>
                   <li><a href="https://www.instagram.com/viniciuspaixaors/">Instagram</a></li>
                 </ul>
                 <hr />
                 <ul className={s.perosnalContact}>
-                  <li>
+                  <li className={s.local}>
                     <strong>Local</strong>
                     <span>Brasília, DF</span>
                   </li>
-                  <li>
+                  <li className={s.whatsapp}>
                     <strong>Whatsapp</strong>
                     <span>
                       <a href="#ligar">(61) 9 9999-9999</a>
                       <a href="#ligar">(61) 9 9999-9999</a>
                     </span>
                   </li>
-                  <li>
+                  <li className={s.email}>
                     <strong>E-mail</strong>
                     <span><a href="mailto:vinicius.paixaors@gmail.com">vinicius.paixaors@gmail.com</a></span>
                   </li>

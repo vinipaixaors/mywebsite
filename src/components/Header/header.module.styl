@@ -5,13 +5,12 @@
   display: block
   width 100%
 
-
   .container
     margin 0 auto
     max-width 1400px
     padding 1rem 0
 
-    @media(max-width $screen-sm)
+    @media(max-width 600px)
       padding 1rem 15px
 
   .navHeader
@@ -22,11 +21,14 @@
     top 0
     z-index 10
     display: block
-    width 100%
+    max-width 100%
 
-    @media(max-width $screen-sm)
+    @media(max-width 600px)
       padding 1rem 15px
+      display block
+      position: unset
 
     li 
       display inline
       padding-right 10px
+      display: none
