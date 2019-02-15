@@ -2,6 +2,7 @@
 
 .sectionBg
   max-width 100vw
+  overflow hidden
 
 .bannerImgRight  
   width 100%
@@ -18,8 +19,10 @@
 
 .container
   .wrapper
-    height calc(100vh - 56px)
+    // height calc(100vh - 56px)
+    height calc(100vh)
     position relative
+    padding-bottom 4rem
 
     @media(max-width $screen-xs)
       height 100%
@@ -94,7 +97,7 @@
           font-style: italic
 
         strong 
-          color green
+          color $yellow
           font-weight: 600
 
     .contentFooter
@@ -207,3 +210,69 @@
         border-right: none;
         opacity: .02;
         bottom 0
+
+// Outras Sections
+.sections
+  overflow hidden
+  
+  .container
+    .wrapper
+      height 100%
+      position relative
+
+      div
+        padding-top 4rem
+        padding-bottom 4rem
+
+        @media(max-width $screen-xs)
+          padding 1rem
+
+        .bannerImgRight
+          text-align right
+          position: unset 
+          transform: unset
+          margin 0
+          padding 0
+
+          @media(max-width $screen-xs)
+            text-align: center
+            margin 0 auto 
+
+          h3
+            margin 0 0 1rem
+            padding 0
+
+            @media(max-width $screen-xs)
+              margin 0 0 .5rem
+
+      div
+        &:nth-of-type(2)
+          column-count: 2;
+
+          @media(max-width 600px)
+            column-count unset
+
+          p 
+            // font-family: 'Advent Pro'
+            // max-width 600px
+            font-size 1rem
+            font-weight: 400
+            line-height: 1.6
+            margin-top 0
+            hyphens: auto
+
+            &.firstParagraph
+              &:first-letter
+                // -webkit-initial-letter: 3 2;
+                // initial-letter: 3 2;
+                font-size 4.5rem
+                line-height: 1
+                color: orange
+                font-weight: bold
+                margin: 0 .7rem 0 0
+                float: left
+                font-family: serif
+                font-weight: bold
+
+
+            
