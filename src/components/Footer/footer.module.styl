@@ -2,12 +2,12 @@
 // in code
 @import '../../assets/styles/core'
 
-.footerBg
+.sections
   position relative
   display block
 
   .headerBg 
-    background #2b2c2c
+    background-color #272727 !important
     display block
     position absolute
     height 100%
@@ -15,7 +15,7 @@
     z-index 1
   
   .contentBg
-    background #2d2e2e
+    background-color #292929 !important
     display block
     position absolute
     height 100%
@@ -25,6 +25,14 @@
   
   .container
     padding 0
+
+    .wrapper
+      div
+        &:nth-of-type(odd)
+          background-color: #272727
+        
+        &:nth-of-type(even)
+          background-color #292929 !important
   
   h1 
     span 
@@ -46,7 +54,7 @@
     list-style none
     position: absolute
     top 47.5%
-    right 0
+    right: 2rem;
 
     @media(max-width $screen-sm)
       position: relative

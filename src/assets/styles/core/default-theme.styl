@@ -1,39 +1,35 @@
 body
-  background-color: #2d2e2e
+  background-color $yellow
 a
-  color #e0a80d
-
-.container
-  margin 0 auto
-  max-width 1400px
-  padding 1rem 0 0
-  padding-top 0
-  color #979899
-  z-index 5
-  position relative
+  color $yellow
 
   // @media(max-width $screen-sm)
   //   padding: 1rem 15px
 
+  // &:nth-child(odd) > .wrapper > div:nth-child(odd)
+  //   background-color: pink
+  
+  // &:nth-child(odd) > .wrapper > div
+  //   background-color: blue
+
 .wrapper
-  display grid
-  grid-template-columns 33% 67%
-  height 100%
+  // > div:nth-child(2)
+  //   background-color: #2d2e2e
 
   @media(max-width $screen-md)
     grid-template-columns 100%
 
   & > div
-    background-color #2d2e2e
-    padding: 3rem 5rem
+    // background-color #2d2e2e
+    // background-color green
+    padding: 4rem 5rem
     position relative
     height 100%
 
+    @media(max-width 768px)
+      padding 4rem 3rem
+    
     @media(max-width 600px)
       padding 1rem 1rem
       margin 0
       max-width 100%
-
-  
-    &:nth-child(odd)
-      background-color: #2b2c2c
