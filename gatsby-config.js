@@ -47,14 +47,14 @@ module.exports = {
         // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_PREVIEW_NAME",
       },
     },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Advent Pro', 'Droid Serif']
-        }
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-web-font-loader',
+    //   options: {
+    //     google: {
+    //       families: ['Advent Pro', 'Droid Serif']
+    //     }
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {

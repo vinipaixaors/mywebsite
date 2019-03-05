@@ -18,5 +18,10 @@ exports.onRenderBody = ({ setHeadComponents }) => {
       key="dns-prefetch-google-tagmanager"
       href="https://www.googletagmanager.com"
     />,
+    <link
+      rel="dns-prefetch"
+      key="dns-prefetch-google-ana;ytics"
+      href="https://www.google-analytics.com"
+    />,
   ])
 }
