@@ -4,12 +4,19 @@ import Layout from "../components/Layout/layout"
 // import Footer from "../components/Footer/footer"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Awards from "../components/Awards/awards"
+import Experience from "../components/Experience/experience"
 
 import s from "../assets/styles/general/index.module.styl"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Vinícius Paixão" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO 
+      title="Vinícius Paixão" 
+      keywords={[`gatsby`, `application`, `react`]} 
+      description = "O site do Vinícius"
+      image = "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg"
+    />
     <div>
       <section className={s.sections}>
         <div className={s.headerBg}></div>
@@ -98,36 +105,26 @@ const IndexPage = () => (
             </div>
             <div>
               <div className={s.media}>
-                <div className={s.item}>
-                  <span>01</span>
-                  <h3>Front-End Avançado</h3>
-                  <p>A arte de juntar ótima experiência do usuário, boa navegação, tecnicas modernas de desenvolvimento para uma entrega eficiente e de alta qualidade.</p>
-                </div>
-                <div className={s.item}>
-                  <span>02</span>
-                  <h3>WordPress</h3>
-                  <p>Conhecimento avançado no CMS mais utilizado no mundo. </p>
-                </div>
-                <div className={s.item}>
-                  <span>03</span>
-                  <h3>Métricas Web</h3>
-                  <p>Certificado pelo Google em 2015, possuo um nível avançado em acompanhamento de métricas. Utilizo as seguintes ferramentas: Google Analytics e Data Studio; ChartBeat;</p>
-                </div>
-                <div className={s.item}>
-                  <span>04</span>
-                  <h3>Design Gráfico</h3>
-                  <p>Trabalho com ferramentas Adobe CC e formação na área.</p>
-                </div>
-                {/* <div className={s.item}>
-                  <span>05</span>
-                  <h3>Javascript</h3>
-                  <p>Cras ornare tristique elit lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.</p>
-                </div>
-                <div className={s.item}>
-                  <span>06</span>
-                  <h3>Javascript</h3>
-                  <p>Cras ornare tristique elit lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.</p>
-                </div> */}
+                <Experience 
+                  numb="01"
+                  title="Front-End Avançado"
+                  description="A arte de juntar ótima experiência do usuário, boa navegação, tecnicas modernas de desenvolvimento para uma entrega eficiente e de alta qualidade."
+                />
+                <Experience 
+                  numb="02"
+                  title="WordPress"
+                  description="Conhecimento avançado no CMS mais utilizado no mundo."
+                />
+                <Experience 
+                  numb="03"
+                  title="Métricas Web"
+                  description="Certificado pelo Google em 2015, possuo um nível avançado em acompanhamento de métricas. Utilizo as seguintes ferramentas: Google Analytics e Data Studio; ChartBeat;"
+                />
+                <Experience 
+                  numb="04"
+                  title="Design Gráfico"
+                  description="Trabalho com ferramentas Adobe CC e formação na área."
+                />
               </div>
               
             </div>
@@ -147,22 +144,20 @@ const IndexPage = () => (
               </div>
             </div>
             <div className={s.awards}>
-              <div className={s.item}>
-                <a href="https://www.metropoles.com/materias-especiais/mulheres-caminhoneiras-superam-preconceitos-pelas-estradas-do-brasil-2">
-                  <small>2018</small>
-                  <h4>25º Prêmio CNT de Jornalismo</h4>
-                  <small>Internet</small>
-                  <p>Caminhoneiras, codinome coragem</p>
-                </a>
-              </div>
-              <div className={s.item}>
-                <a href="https://especiais.correiobraziliense.net.br/ciclovias-em-busca-de-uma-cidade/">
-                  <small>2017</small>
-                  <h4>24º Prêmio CNT de Jornalismo</h4>
-                  <small>Meio ambiente e transporte</small>
-                  <p>Ciclovias em busca de uma cidade</p>
-                </a>
-              </div>
+              <Awards 
+                link="https://www.metropoles.com/materias-especiais/mulheres-caminhoneiras-superam-preconceitos-pelas-estradas-do-brasil-2"
+                date="2018"
+                name="25º Prêmio CNT de Jornalismo"
+                category="Internet"
+                title="Caminhoneiras, codinome coragem"
+              />
+              <Awards 
+                link="https://especiais.correiobraziliense.net.br/ciclovias-em-busca-de-uma-cidade/"
+                date="2017"
+                name="24º Prêmio CNT de Jornalismo"
+                category="Meio ambiente e transporte"
+                title="Ciclovias em busca de uma cidade"
+              />
             </div>
           </div>
         </div>

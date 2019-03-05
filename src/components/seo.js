@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, image }) {
   return (
     <StaticQuery
       query={detailsQuery}
@@ -16,7 +16,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               lang,
             }}
             title={title}
-            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            titleTemplate={`${data.site.siteMetadata.title} | %s`}
             meta={[
               {
                 name: `description`,
@@ -29,6 +29,10 @@ function SEO({ description, lang, meta, keywords, title }) {
               {
                 property: `og:description`,
                 content: metaDescription,
+              },
+              {
+                property: `og:image`,
+                content: image,
               },
               {
                 property: `og:type`,
@@ -79,6 +83,7 @@ SEO.propTypes = {
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
+  image: PropTypes.string,
 }
 
 export default SEO
