@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes  from 'prop-types';
+import propTypes  from 'prop-types';
 import s from "../../assets/styles/general/index.module.styl";
 
 const Experience = ({
@@ -14,10 +14,10 @@ const Experience = ({
   </div>
 );
 
-Experience.PropTypes = {
-  numb: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+Experience.propTypes = {
+  numb: propTypes.string.isRequired,
+  title: propTypes.string.isRequired,
+  description: propTypes.string.isRequired,
 };
 
 Experience.defaultProps = {

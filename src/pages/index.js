@@ -1,13 +1,13 @@
 import React from "react"
-// import { Link } from "gatsby"
-import Layout from "../components/Layout/layout"
-// import Footer from "../components/Footer/footer"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import Awards from "../components/Awards/awards"
-import Experience from "../components/Experience/experience"
+import { Link } from "gatsby"
+import Layout from "components/Layout"
+// import Footer from "components/Footer"
+import Image from "components/image"
+import SEO from "components/seo"
+import Awards from "components/Awards"
+import Experience from "components/Experience"
 
-import s from "../assets/styles/general/index.module.styl"
+import s from "assets/styles/general/index.module.styl"
 
 const IndexPage = () => (
   <Layout>
@@ -15,7 +15,7 @@ const IndexPage = () => (
       title="Vinícius Paixão" 
       keywords={[`gatsby`, `application`, `react`]} 
       description = "O site do Vinícius"
-      image = "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg"
+      image = ""
     />
     <div>
       <section className={s.sections}>
@@ -56,13 +56,15 @@ const IndexPage = () => (
                   <li className={s.whatsapp}>
                     <strong>Whatsapp</strong>
                     <span>
-                      <a href="#ligar">(61) 9 9999-9999</a>
-                      <a href="#ligar">(61) 9 9999-9999</a>
+                      <Link to="/#ligar">(61) 9 9999-9999</Link>
+                      <Link to="/#ligar2">(61) 9 9999-8888</Link>
                     </span>
                   </li>
                   <li className={s.email}>
                     <strong>E-mail</strong>
-                    <span><a href="mailto:vinicius.paixaors@gmail.com">vinicius.paixaors@gmail.com</a></span>
+                    <span>
+                      <a href="mailto:vinicius.paixaors@gmail.com">vinicius.paixaors@gmail.com</a>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -163,8 +165,6 @@ const IndexPage = () => (
         </div>
       </section>
     </div>
-    
-    
     {/* <Footer /> */}
   </Layout>
 )

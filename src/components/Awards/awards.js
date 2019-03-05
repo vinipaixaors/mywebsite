@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes  from 'prop-types';
+import propTypes  from 'prop-types';
 import s from "../../assets/styles/general/index.module.styl";
 
 const Awards = ({
@@ -19,12 +19,12 @@ const Awards = ({
   </div>
 );
 
-Awards.PropTypes = {
-  link: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  category: PropTypes.string,
-  title: PropTypes.string.isRequired,
+Awards.propTypes = {
+  link: propTypes.string.isRequired,
+  date: propTypes.string.isRequired,
+  name: propTypes.string.isRequired,
+  category: propTypes.string,
+  title: propTypes.string.isRequired,
 };
 
 Awards.defaultProps = {
