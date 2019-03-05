@@ -4,4 +4,19 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-// You can delete this file if you're not using it
+const React = require(`react`)
+
+exports.onRenderBody = ({ setHeadComponents }) => {
+  setHeadComponents([
+    <link
+      rel="dns-prefetch"
+      key="dns-prefetch-fonts-google"
+      href="https://fonts.googleapis.com"
+    />,
+    <link
+      rel="dns-prefetch"
+      key="dns-prefetch-google-tagmanager"
+      href="https://www.googletagmanager.com"
+    />,
+  ])
+}
