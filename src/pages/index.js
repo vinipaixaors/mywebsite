@@ -6,6 +6,7 @@ import Image from "components/image"
 import SEO from "components/seo"
 import Awards from "components/Awards"
 import Experience from "components/Experience"
+import Skills from "components/Skills"
 
 import s from "assets/styles/general/index.module.styl"
 
@@ -133,6 +134,8 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
+
+      <Skills />
 
       <section className={s.sections}>
         <div className={s.headerBg}></div>
