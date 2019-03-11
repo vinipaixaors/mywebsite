@@ -13,8 +13,8 @@ const Awards = ({
     <a href={link} target="_blank" rel="noopener noreferrer">
       <small>{date}</small>
       <h4>{name}</h4>
-      <small>{category}</small>
       <p>{title}</p>
+      <small>{category}</small>
     </a>
   </div>
 );
