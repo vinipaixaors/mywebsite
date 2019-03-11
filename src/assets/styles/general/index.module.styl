@@ -52,6 +52,9 @@
             margin 0 auto
             padding 2rem 0
 
+          > div
+            overflow: initial !important
+
         .contentText
           position absolute
           transform: translateY(-50%);
@@ -115,6 +118,10 @@
               color $yellow
               font-weight: 600
 
+            span 
+              @media(min-width $screen-md)
+                display block
+
         .contentFooter
           position absolute
           bottom: 0
@@ -122,10 +129,12 @@
           display block
           margin-bottom 4rem
           column-count: 1
+          width: calc(100% - 8rem);
 
           @media(max-width 768px)
             position: unset 
             margin-bottom 1rem
+            width: 100%;
 
           .social
             list-style: none

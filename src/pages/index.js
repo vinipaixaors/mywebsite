@@ -1,12 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import Layout from "components/Layout"
 // import Footer from "components/Footer"
 import Image from "components/image"
 import SEO from "components/seo"
 import Awards from "components/Awards"
-import Experience from "components/Experience"
+import Expertise from "components/Expertise"
 import Skills from "components/Skills"
+import Experience from "components/Experience"
 
 import s from "assets/styles/general/index.module.styl"
 
@@ -37,8 +38,11 @@ const IndexPage = () => (
                   <span>Vinícius</span>
                   <span>Paixão</span>
                 </h1>
-                <p><strong>Engenheiro de software</strong> e desenvolvedor Web</p>
-                <p>Front-end &amp; Designer</p>
+                <p>
+                  <strong>Engenheiro de software</strong> e desenvolvedor Web 
+                  <span> Front-end &amp; Designer</span>
+                </p>
+                
               </div>
               <div className={s.contentFooter}>
                 <ul className={s.social}>
@@ -54,13 +58,13 @@ const IndexPage = () => (
                     <strong>Local</strong>
                     <span>Brasília, DF</span>
                   </li>
-                  <li className={s.whatsapp}>
+                  {/* <li className={s.whatsapp}>
                     <strong>Whatsapp</strong>
                     <span>
                       <Link to="/#ligar">(61) 9 9999-9999</Link>
                       <Link to="/#ligar2">(61) 9 9999-8888</Link>
                     </span>
-                  </li>
+                  </li> */}
                   <li className={s.email}>
                     <strong>E-mail</strong>
                     <span>
@@ -108,25 +112,25 @@ const IndexPage = () => (
             </div>
             <div>
               <div className={s.media}>
-                <Experience 
+                <Expertise 
                   numb="01"
-                  title="Front-End Avançado"
-                  description="A arte de juntar ótima experiência do usuário, boa navegação, tecnicas modernas de desenvolvimento para uma entrega eficiente e de alta qualidade."
+                  title="Front-End"
+                  description="A arte de juntar ótima experiência do usuário, boa navegação, tecnicas modernas de desenvolvimento para uma entrega eficiente e de alta performance e qualidade."
                 />
-                <Experience 
+                <Expertise 
                   numb="02"
-                  title="WordPress"
-                  description="Conhecimento avançado no CMS mais utilizado no mundo."
+                  title="CMS WordPress"
+                  description="Experiência e vivencia no CMS mais presente no mundo. Usado da forma correta e com os recursos certos, o wordpress pode ser o CMS da sua empresa."
                 />
-                <Experience 
+                <Expertise 
                   numb="03"
                   title="Métricas Web"
-                  description="Certificado pelo Google em 2015, possuo um nível avançado em acompanhamento de métricas. Utilizo as seguintes ferramentas: Google Analytics e Data Studio; ChartBeat;"
+                  description="Certificado pelo Google em 2015, possuo um nível avançado em métricas web. Experiência nas seguintes ferramentas: Google Analytics e Data Studio; ChartBeat;"
                 />
-                <Experience 
+                <Expertise 
                   numb="04"
                   title="Design Gráfico"
-                  description="Trabalho com ferramentas Adobe CC e formação na área."
+                  description="Tendo Design Gráfico como a primeira formação, trabalho com ferramentas Adobe CC com foco na web."
                 />
               </div>
               
@@ -136,6 +140,7 @@ const IndexPage = () => (
       </section>
 
       <Skills />
+      <Experience />
 
       <section className={s.sections}>
         <div className={s.headerBg}></div>
