@@ -155,6 +155,13 @@ const IndexPage = () => (
             </div>
             <div className={s.awards}>
               <Awards 
+                link="https://www.metropoles.com/materias-especiais/a-tragedia-de-mariana-mg-vista-pela-janela-do-trem-efvm"
+                date="2019"
+                name="2° Prêmio de Jornalismo ANPTrilhos"
+                category="Mídia Digital"
+                title="A tragédia de Mariana (MG) vista pela janela do trem"
+              />
+              <Awards 
                 link="https://www.metropoles.com/materias-especiais/mulheres-caminhoneiras-superam-preconceitos-pelas-estradas-do-brasil-2"
                 date="2018"
                 name="25º Prêmio CNT de Jornalismo"
