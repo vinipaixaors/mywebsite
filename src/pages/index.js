@@ -27,8 +27,8 @@ const IndexPage = () => (
   <Layout>
     <SEO 
       title="Vinícius Paixão" 
-      keywords={[`gatsby`, `application`, `react`]} 
-      description = ""
+      keywords={[`front-end`, `desenvolvedor`, `brasília`, `desenvolvimento`, `web`, `design gráfico`, `vinícius paixão`, `javascript`]} 
+      description = "Website portfólio de um desenvolvedor Web front-end de Brasília"
       image = ""
     />
     <div>
@@ -50,10 +50,10 @@ const IndexPage = () => (
                   <span>Vinícius</span>
                   <span>Paixão</span>
                 </h1>
-                <p>
+                <h2>
                   <strong>Engenheiro de software</strong> e desenvolvedor Web 
                   <span> Front-end &amp; Designer</span>
-                </p>
+                </h2>
                 
               </div>
               <div className={s.contentFooter}>
@@ -61,6 +61,7 @@ const IndexPage = () => (
                   {/* <li><a href="https://github.com/vinipaixaors/" className={s.iconGithub}> </a></li> */}
                   <li><a href="https://github.com/vinipaixaors/">Github</a></li>
                   <li><a href="https://www.linkedin.com/in/viniciuspaixaors/">Linkedin</a></li>
+                  <li><a href="https://twitter.com/viniciuspaixaor">Twitter</a></li>
                   <li><a href="https://profiles.udacity.com/p/10855558614">Udacity</a></li>
                   <li><a href="https://www.instagram.com/viniciuspaixaors/">Instagram</a></li>
                 </ul>

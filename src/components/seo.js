@@ -75,6 +75,7 @@ SEO.defaultProps = {
   lang: `pt-br`,
   meta: [],
   keywords: [],
+  image: `https://www.viniciuspaixao.com.br/src/assets/images/avatar/avatar.jpg`,
 }
 
 SEO.propTypes = {
