@@ -29,7 +29,7 @@ class Footer extends React.Component{
                 </ul>
                 <span className={s.op8}>
                   © {new Date().getFullYear()} Todos direitos reservados 
-                  - Desenvolvido com
+                  - Desenvolvido por
                   {` `}
                   <a href="https://www.gatsbyjs.org">Gatsby</a>, por Vinícius Paixão
                 </span>

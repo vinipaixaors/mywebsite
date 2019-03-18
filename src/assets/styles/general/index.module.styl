@@ -88,7 +88,7 @@
                 -moz-line-height 1.4
                 font-family: sans-serif;
                 // font-family: 'Advent Pro'
-                background: linear-gradient(to bottom right, $yellow, yellow);
+                background: linear-gradient(to bottom right, $yellow, $white);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 z-index: 2
@@ -311,27 +311,29 @@
 
       div
         
-          p 
-            // font-family: 'Advent Pro'
-            // max-width 600px
-            font-size 1rem
-            font-weight: 400
-            line-height: 1.6
-            margin-top 0
-            hyphens: auto
+        p 
+          // font-family: 'Advent Pro'
+          // max-width 600px
+          font-size 1rem
+          font-weight: 400
+          line-height: 1.6
+          margin-top 0
+          hyphens: auto
+          -webkit-font-smoothing: antialiased;
+          
 
-            &.firstParagraph
-              &:first-letter
-                // -webkit-initial-letter: 3 2;
-                // initial-letter: 3 2;
-                font-size 4.5rem
-                line-height: 1
-                color: $yellow
-                font-weight: bold
-                margin: 0 .7rem 0 0
-                float: left
-                font-family: serif
-                font-weight: bold
+          &.firstParagraph
+            &:first-letter
+              // -webkit-initial-letter: 3 2;
+              // initial-letter: 3 2;
+              font-size 4.5rem
+              line-height: 1
+              color: $yellow
+              font-weight: bold
+              margin: 0 .7rem 0 0
+              float: left
+              font-family: serif
+              font-weight: bold
 
 
             

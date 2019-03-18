@@ -101,6 +101,8 @@ const Experience = () => (
           </div>
           <div>
             <div className={s.media}>
+              {/* <div className={s.timeline + ' ' + s.viniteste}> */}
+              {/* <div className={[s.timeline, s.viniteste].join(' ')}> */}
               <div className={s.timeline}>
                 {experienceList.map((item) => (
                   <div key={item.id}>

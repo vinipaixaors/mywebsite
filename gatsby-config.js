@@ -4,6 +4,9 @@ module.exports = {
     description: `Website portfólio de um desenvolvedor Front-end - Brasília-DF`,
     author: `@vinipaixaors`,
     siteUrl: `https://www.viniciuspaixao.com.br`,
+    social: {
+      twitter: `viniciuspaixaor`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,6 +17,17 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      },
+    },
+    `gatsby-remark-prismjs`,
+    `gatsby-remark-copy-linked-files`,
+    `gatsby-remark-smartypants`,
+    `gatsby-plugin-feed`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -22,9 +36,9 @@ module.exports = {
         name: `Vinícius Paixão`,
         short_name: `ViniDev`,
         start_url: `/`,
-        background_color: `#663399`,
-        // orientation: `portrait`,
-        theme_color: `#2b2c2c`,
+        background_color: `#2c3d50`,
+        orientation: `portrait`,
+        theme_color: `#2c3d50`,
         display: `standalone`,
         icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },

@@ -1,12 +1,13 @@
 {
   "name": "gatsby-starter-default",
-  "private": false,
+  "private": true,
   "description": "Boilerpalte de desenvolvimento para sites estáticos usando Gatsby",
   "version": "0.1.0",
   "author": "Vinícius Paixão <vinicius.paixaors@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.112",
     "gatsby-image": "^2.0.29",
+    "gatsby-plugin-feed": "^2.0.14",
     "gatsby-plugin-google-tagmanager": "^2.0.9",
     "gatsby-plugin-manifest": "^2.0.17",
     "gatsby-plugin-offline": "^2.0.22",
@@ -14,15 +15,25 @@
     "gatsby-plugin-react-helmet": "^3.0.6",
     "gatsby-plugin-react-svg": "^2.0.0",
     "gatsby-plugin-sharp": "^2.0.20",
+    "gatsby-remark-copy-linked-files": "^2.0.9",
+    "gatsby-remark-images": "^2.0.6",
+    "gatsby-remark-prismjs": "^3.2.4",
+    "gatsby-remark-responsive-iframe": "^2.0.9",
+    "gatsby-remark-smartypants": "^2.0.8",
     "gatsby-plugin-sitemap": "^2.0.5",
     "gatsby-plugin-stylus": "^2.0.6",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.0.20",
+    "gatsby-transformer-remark": "^2.3.1",
     "gatsby-transformer-sharp": "^2.1.13",
+    "prismjs": "^1.15.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
   },
   "keywords": [
     "gatsby"
