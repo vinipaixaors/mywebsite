@@ -17,13 +17,6 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `blog`,
-        path: `${__dirname}/blog`,
-      },
-    },
     `gatsby-remark-prismjs`,
     `gatsby-remark-copy-linked-files`,
     `gatsby-remark-smartypants`,
