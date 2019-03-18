@@ -77,12 +77,12 @@ const IndexPage = () => (
                       <Link to="/#ligar2">(61) 9 9999-8888</Link>
                     </span>
                   </li> */}
-                  <li className={s.email}>
+                  {/* <li className={s.email}>
                     <strong>E-mail</strong>
                     <span>
-                      <a href="mailto:vinicius.paixaors@gmail.com">vinicius.paixaors@gmail.com</a>
+                      <a href="mailto:"></a>
                     </span>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

@@ -21,6 +21,14 @@ module.exports = {
     `gatsby-remark-copy-linked-files`,
     `gatsby-remark-smartypants`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.viniciuspaixao.com.br',
+        sitemap: 'https://www.viniciuspaixao.com.br/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
