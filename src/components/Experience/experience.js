@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import "./experience.styl"
 import s from "assets/styles/general/index.module.styl"
 
 const  experienceList = [
@@ -34,7 +35,7 @@ const  experienceList = [
   },
   {
     id: '003',
-    type: 'study',
+    type: 'certified',
     dateStart: '2015',
     dateEnd: '2017',
     institution: 'Google Analytics',
@@ -89,12 +90,10 @@ const  experienceList = [
 const Experience = () => (
   <>
     <section className={s.sections}>
-      <div className={s.headerBg}></div>
-      <div className={s.contentBg}></div>
       <div className={s.container}>
         <div className={s.wrapper}>
           <div>
-            <div className={s.bannerImgRight}>
+            <div id={s.vini} className={[s.bannerImgRight, s.sticky].join(' ')}>
               <h3>Experiência e Formação</h3>
               <small>Lugares por onde passei, atuei e aprendi.</small>
             </div>
@@ -103,11 +102,12 @@ const Experience = () => (
             <div className={s.media}>
               {/* <div className={s.timeline + ' ' + s.viniteste}> */}
               {/* <div className={[s.timeline, s.viniteste].join(' ')}> */}
+              
               <div className={s.timeline}>
                 {experienceList.map((item) => (
                   <div key={item.id}>
-                    <div className={s.pointTimeline}></div>
-                    <div className={s.item}>
+                    <div className={`${s.pointTimeline} ${item.type}`}></div>
+                    <div className={`${s.item} ${item.type}`}>
                       <div>
                         <h5>{item.dateStart} - {item.dateEnd}</h5>
                         <h4>{item.institution}</h4>

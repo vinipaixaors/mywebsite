@@ -16,9 +16,14 @@ function yearsOld() {
   const mes = now.getMonth();
   const dia = now.getDate();
 
-  if(( mes === 10) && ( dia > 17)){
+  if(( mes > 10) && ( dia > 17)){
+    // console.log('bloco 01');
     return now.getFullYear() - 1985;
-  } else{
+  } else if(mes > 11) {
+    // console.log('bloco 02');
+    return now.getFullYear() - 1985;
+  } else {
+    // console.log('bloco 03');
     return now.getFullYear() - 1986;
   }
 }
@@ -43,7 +48,6 @@ const IndexPage = () => (
                 <Image />
               </div>
             </div>
-
             <div>
               <div className={s.contentText}>
                 <h1>
@@ -51,10 +55,9 @@ const IndexPage = () => (
                   <span>Paixão</span>
                 </h1>
                 <h2>
-                  <strong>Engenheiro de software</strong> e desenvolvedor Web 
+                  <strong>Engenheiro de software</strong> e desenvolvedor web 
                   <span> Front-end &amp; Designer</span>
                 </h2>
-                
               </div>
               <div className={s.contentFooter}>
                 <ul className={s.social}>
@@ -66,25 +69,27 @@ const IndexPage = () => (
                   <li><a href="https://www.instagram.com/viniciuspaixaors/">Instagram</a></li>
                 </ul>
                 <hr />
+                {/* 
                 <ul className={s.perosnalContact}>
                   <li className={s.local}>
                     <strong>Local</strong>
                     <span>Brasília, DF</span>
                   </li>
-                  {/* <li className={s.whatsapp}>
+                  <li className={s.whatsapp}>
                     <strong>Whatsapp</strong>
                     <span>
                       <Link to="/#ligar">(61) 9 9999-9999</Link>
                       <Link to="/#ligar2">(61) 9 9999-8888</Link>
                     </span>
-                  </li> */}
-                  {/* <li className={s.email}>
+                  </li>
+                  <li className={s.email}>
                     <strong>E-mail</strong>
                     <span>
                       <a href="mailto:"></a>
                     </span>
-                  </li> */}
-                </ul>
+                  </li>
+                </ul> 
+                */}
               </div>
             </div>
           </div>
@@ -92,11 +97,9 @@ const IndexPage = () => (
       </section>
 
       <section className={s.sections}>
-        <div className={s.headerBg}></div>
-        <div className={s.contentBg}></div>
         <div className={s.container}>
           <div className={s.wrapper}>
-            <div>
+            <div className={s.sticky}>
               <div className={s.bannerImgRight}>
                 <h3>Intro</h3>
                 <small>Um pouco sobre meu <strong>perfil</strong></small>
@@ -104,22 +107,20 @@ const IndexPage = () => (
             </div>
             <div>
               <p className={s.firstParagraph}>
-                Me chamo Vinícius, tenho {' '}
-                { yearsOld() }
-                {' '} anos e trabalho na empresa <a href="https://www.metropoles.com">Metrópoles</a> como Coordenador de tecnologia em Brasília. 
-                Atuo com tecnologia a {' '}{new Date().getFullYear() - 2004} anos. Formado em design gráfico e estudante de engenharia de software, conquistei <a href="#awards">três prêmios</a> nesses últimos anos.
-                Atualmente estou focado no desenvolvimento Front-End e Back-End para aplicações web e mobile.
+                Me chamo Vinícius, tenho { yearsOld() } anos e trabalho na empresa <a href="https://www.metropoles.com">Metrópoles</a> como Coordenador de tecnologia em Brasília. 
+                Atuo com tecnologia a {new Date().getFullYear() - 2004} anos. Formado em design gráfico e estudante de engenharia de software. Conquistei <a href="#awards">três prêmios</a> nesses últimos anos.
               </p>
-              <p>Possuo um perfil comunicativo, flexível, responsável e engajado. Disposto a absorver novos desafios e muito interesse em novas tecnologias e tendências.</p>
-              {/* <p>Abaixo podemos conferir algumas das principais tarefas desempenhadas na profissão: </p> */}
+              <p>
+                Atualmente estou focado no desenvolvimento front-end e back-end para aplicações web e mobile.
+              </p>
+              <p>Possuo um perfil comunicativo, focado, responsável e engajado. Disposto a absorver novos desafios e muito interesse em novas tecnologias e tendências de mercado.</p>
+              <p>Conferira algumas das experiências na profissão: </p>
             </div>
           </div>
         </div>
       </section>
 
       <section className={s.sections}>
-        <div className={s.headerBg}></div>
-        <div className={s.contentBg}></div>
         <div className={s.container}>
           <div className={s.wrapper}>
             <div>
@@ -156,7 +157,6 @@ const IndexPage = () => (
                   description="Tendo Design Gráfico como a primeira formação, trabalho com ferramentas Adobe CC com foco na web."
                 />
               </div>
-              
             </div>
           </div>
         </div>
@@ -166,8 +166,6 @@ const IndexPage = () => (
       <Experience />
 
       <section id="awards" className={s.sections}>
-        <div className={s.headerBg}></div>
-        <div className={s.contentBg}></div>
         <div className={s.container}>
           <div className={s.wrapper}>
             <div>

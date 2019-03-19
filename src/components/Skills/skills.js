@@ -83,8 +83,6 @@ const  skillsList = [
 const Skills = () => (
   <>
     <section className={s.sections}>
-      <div className={s.headerBg}></div>
-      <div className={s.contentBg}></div>
       <div className={s.container}>
         <div className={s.wrapper}>
           <div>
@@ -102,7 +100,6 @@ const Skills = () => (
                     <div className={s.progressBar} style={{width : item.size + '%' }}></div>
                   </div>
                 </div>
-
               ))}
             </div>
           </div>
