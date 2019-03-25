@@ -114,7 +114,7 @@ const IndexPage = () => (
                 Atualmente estou focado no desenvolvimento front-end e back-end para aplicações web e mobile.
               </p>
               <p>Possuo um perfil comunicativo, focado, responsável e engajado. Disposto a absorver novos desafios e muito interesse em novas tecnologias e tendências de mercado.</p>
-              <p>Conferira algumas das experiências na profissão: </p>
+              <p>Confira algumas das minhas experiências: </p>
             </div>
           </div>
         </div>

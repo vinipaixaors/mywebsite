@@ -1,7 +1,7 @@
 import React from 'react'
 import "./experience.styl"
 import s from "assets/styles/general/index.module.styl"
-import experienceList from "./data.1.json"
+import experienceList from "./data.json"
 // import experienceList from "./data.js"
 // let admins = require('./data.1.json');
 
