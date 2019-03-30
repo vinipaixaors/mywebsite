@@ -15,10 +15,10 @@ class Footer extends React.Component{
             <div className={s.wrapper}>
               <div></div>
               <div>
-                <h1>
+                <h2>
                   <span>Vinícius</span>
                   <span>Paixão</span>
-                </h1>
+                </h2>
                 <ul>
                   <li><a href="https://github.com/vinipaixaors/">github</a></li>
                   <li><a href="https://www.linkedin.com/in/viniciuspaixaors/">linkedin</a></li>

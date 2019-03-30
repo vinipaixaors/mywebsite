@@ -1,6 +1,8 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+// import propTypes  from 'prop-types';
 import Img from "gatsby-image"
+// import { string } from "postcss-selector-parser";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -26,7 +28,8 @@ const Image = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Perfil de Vinícius Paixão" />}
   />
 )
+
 export default Image
