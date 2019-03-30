@@ -54,6 +54,14 @@ function SEO({ description, lang, meta, keywords, title, image }) {
                 name: `twitter:description`,
                 content: metaDescription,
               },
+              {
+                name: `msvalidate.01`,
+                content: `F9AA82F645D8FE49338FE604405A3F03`,
+              },
+              {
+                name: `yandex-verification`,
+                content: `21f5c626fb1666cc`,
+              },
             ]
               .concat(
                 keywords.length > 0
