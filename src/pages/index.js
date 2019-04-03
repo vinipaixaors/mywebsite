@@ -17,13 +17,10 @@ function yearsOld() {
   const dia = now.getDate();
 
   if(( mes > 10) && ( dia > 17)){
-    // console.log('bloco 01');
     return now.getFullYear() - 1985;
   } else if(mes > 11) {
-    // console.log('bloco 02');
     return now.getFullYear() - 1985;
   } else {
-    // console.log('bloco 03');
     return now.getFullYear() - 1986;
   }
 }
@@ -53,6 +50,7 @@ const IndexPage = () => (
                 <h1>
                   <span>Vinícius</span>
                   <span>Paixão</span>
+                  <span>Desenvolvedor, Brasília-DF</span> 
                 </h1>
                 <h2>
                   <strong>Engenheiro de software</strong> e desenvolvedor web 
@@ -65,7 +63,7 @@ const IndexPage = () => (
                   <li><a href="https://github.com/vinipaixaors/">Github</a></li>
                   <li><a href="https://www.linkedin.com/in/viniciuspaixaors/">Linkedin</a></li>
                   <li><a href="https://twitter.com/viniciuspaixaor">Twitter</a></li>
-                  <li><a href="https://profiles.udacity.com/p/10855558614">Udacity</a></li>
+                  {/* <li><a href="https://profiles.udacity.com/p/10855558614">Udacity</a></li> */}
                   <li><a href="https://www.instagram.com/viniciuspaixaors/">Instagram</a></li>
                 </ul>
                 <hr />
@@ -107,11 +105,11 @@ const IndexPage = () => (
             </div>
             <div>
               <p className={s.firstParagraph}>
-                Me chamo Vinícius, tenho { yearsOld() } anos e trabalho na empresa <a href="https://www.metropoles.com">Metrópoles</a> como Coordenador de tecnologia em Brasília. 
+                Me chamo Vinícius, tenho { yearsOld() } anos e trabalho na empresa <a href="https://www.metropoles.com">Metrópoles</a> como coordenador de tecnologia em Brasília-DF. 
                 Atuo com tecnologia a {new Date().getFullYear() - 2004} anos. Formado em design gráfico e estudante de engenharia de software. Conquistei <a href="#awards">três prêmios</a> nesses últimos anos.
               </p>
               <p>
-                Atualmente estou focado no desenvolvimento front-end e back-end para aplicações web e mobile.
+                Atualmente estou focado no desenvolvimento front-end para aplicações web e mobile.
               </p>
               <p>Possuo um perfil comunicativo, focado, responsável e engajado. Disposto a absorver novos desafios e muito interesse em novas tecnologias e tendências de mercado.</p>
               <p>Confira algumas das minhas experiências: </p>
