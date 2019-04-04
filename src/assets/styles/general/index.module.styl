@@ -38,7 +38,7 @@
           bottom: 0
           max-width 100%
           display block
-          margin-bottom 4rem
+          margin-bottom 2rem
           column-count: 1
           width: calc(100% - 8rem);
 
@@ -136,7 +136,7 @@
               
               span
                 font-size 1rem
-                font-family: 'Advent Pro'
+                font-family: $primary-family
                 letter-spacing: .02rem
 
                 a
@@ -200,6 +200,7 @@
             margin 0 0 .2rem
             padding 0
             position relative
+            font-family $second-family
 
             @media(max-width $screen-xs)
               margin 0 0 .5rem
@@ -236,83 +237,29 @@
 
       div
         
-        p 
-          // font-family: 'Advent Pro'
-          // max-width 600px
+        p
           font-size 1rem
           font-weight: 400
           line-height: 1.6
           margin-top 0
           hyphens: auto
-          -webkit-font-smoothing: antialiased;
+          // -webkit-font-smoothing: antialiased;
+          font-family: $primary-family
           
           &.firstParagraph
             &:first-letter
               // -webkit-initial-letter: 3 2;
               // initial-letter: 3 2;
               font-size 4.7rem
-              line-height: 1
+              line-height: .5
               color: $yellow
               font-weight: bold
-              margin: 0 .7rem 0 0
+              margin: 1.5rem .7rem 0 0
+              padding: 0
               float: left
-              font-family: serif
+              font-family: $second-family
               font-weight: bold
+              vertical-align: baseline
 
 
-            
-.awards
-  @media(max-width 768px)
-    padding 4rem 3rem
-
-  @media(max-width $screen-xs)
-    text-align: center;
-
-  .item
-    display inline-block
-    width 33.333%
-    padding-right 5%
-
-    @media(max-width 768px)
-      width: 50%
-    
-    @media(max-width 600px)
-      width: 100%
-      display: block
-
-    @media(max-width $screen-xs)
-      margin-bottom 1.5rem
-
-    a
-      text-decoration: none
-      
-      h4
-        text-transform: uppercase
-        margin .5rem 0
-        padding 0
-        line-height: 1.2
-
-        @media(max-width $screen-xs)
-          margin .5rem 0 0
-
-      small 
-        width 100%
-        color: $gray-theme
-        display inline-block
-        padding: 0
-        margin 0
-        line-height: 1
-
-        &:first-child
-          font-style: italic
-
-      p
-        color: $gray-theme
-        font-family $font-family
-        font-size 1.1rem
-        margin .5rem 0 0
-        padding 0
-        line-height: 1
-
-        @media(max-width $screen-xs)
-          margin .3rem 0 0
+@import "awards"

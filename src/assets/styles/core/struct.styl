@@ -93,7 +93,7 @@
                 line-height: 0
                 font-weight: 400
                 font-size 3.1rem
-                font-family: 'Advent Pro'
+                font-family: sans-serif
 
                 @media(max-width $screen-sm)
                   line-height: 0.3
@@ -104,10 +104,9 @@
                   text-transform: uppercase
                   color $yellow
                   letter-spacing: -.5rem
-                  line-height: 1.2
+                  line-height: 1.5
                   -moz-line-height 1.4
-                  font-family: sans-serif;
-                  // font-family: 'Advent Pro'
+                  font-family: $second-family
                   background: linear-gradient(to bottom right, $yellow, $white);
                   -webkit-background-clip: text;
                   -webkit-text-fill-color: transparent;
@@ -128,6 +127,7 @@
                   line-height: 1
                   padding-left .5rem
                   margin 0
+                  color: #25384e
 
 
                 small
@@ -141,7 +141,7 @@
               line-height: 1.4
               margin 0
               padding 0 0 0 6px
-              font-family: 'Advent Pro'
+              font-family: $primary-family
 
               @media(max-width 600px)
                 padding 0
@@ -154,7 +154,7 @@
                 font-weight: 600
 
               span 
-                @media(min-width $screen-md)
+                @media(min-width $screen-sm)
                   display block
     
   // Intro
@@ -182,8 +182,11 @@
     .container
       .wrapper
         > div:nth-child(2)
-            padding 2rem 5rem
+            padding 4rem 10rem 4rem 5rem
 
+            @media(max-width $screen-md)
+              padding 3rem 5rem
+              
             @media(max-width 768px)
               padding 2rem 3rem
             
@@ -191,18 +194,15 @@
               padding 2rem
     .media
       display grid
-      grid-template-columns 50% 50%
+      grid-template-columns 45% 45%
+      grid-column-gap: 10%
+      grid-row-gap: 2rem
 
       @media(max-width 768px)
         grid-template-columns 100%
         padding 0
     
       .item
-        margin 2rem 2rem 2rem 0
-
-        @media(max-width 600px)
-          margin 0 0 2rem 0
-          padding 0
 
         span 
           display block
@@ -219,10 +219,10 @@
           text-transform: uppercase
           font-size 1rem
           line-height: 1.35
+          font-family $second-family
         
         p
           padding-left: 1.8rem
-          // font-family: 'Advent Pro'
           margin-bottom 0
           font-size .9rem
   
@@ -241,7 +241,8 @@
                   
     .media
       display grid
-      grid-template-columns 50% 50%
+      grid-template-columns 45% 45%
+      grid-column-gap: 10%
 
       @media(max-width 768px)
         grid-template-columns 100%
@@ -249,7 +250,7 @@
     
       .item
         // margin 2rem 4rem 2rem 0
-        margin: 2rem 4rem .5rem 0;
+        margin: 2rem 0 .5rem
 
         @media(max-width 600px)
           margin 0 0 1.5rem 0
@@ -259,6 +260,7 @@
           margin 0 0 .8rem
           text-transform: uppercase
           font-size 1rem
+          font-family $second-family
 
           span 
             color $yellow
@@ -294,6 +296,9 @@
 
         > div:nth-child(2)
             padding 3rem 10rem 3rem 5rem
+
+            @media(max-width $screen-lg)
+              padding 3rem 5rem
 
             @media(max-width 768px)
               padding 2rem 3rem
@@ -352,13 +357,13 @@
               margin-left 0
           
             p   
-              font-size .8rem
-              padding-right 6rem
+              font-size .9rem
+              // padding-right 6rem
               // padding-top 18px
 
               @media(max-width $screen-md)
                 margin-top 1.2rem
-                padding-right 0
+                padding-left 1rem
 
           h5 
             margin 0
@@ -376,12 +381,19 @@
             font-size 1rem
             line-height: 1.2;
 
+            @media(max-width $screen-lg)
+              margin 0 1rem .4rem 0
+
           span 
             text-transform: capitalize
             font-size .8rem
             padding: 0 0 .8rem
             display: block
             color: #999
+            line-height: 1.1
+
+            @media(max-width $screen-lg)
+              max-width 140px
 
           small
             display: block;
@@ -400,10 +412,6 @@
           //   letter-spacing: 0.1rem
 
 
-
-  
-  
-  
   // Footer
   &:last-child
     max-width 100vw
@@ -445,6 +453,9 @@
       > div:nth-of-type(1)
         padding: 4rem 5rem 4rem 10rem
   
+        @media(max-width $screen-md)
+          padding: 4rem 5rem
+
         @media(max-width 768px)
           padding 4rem 3rem
         
@@ -459,6 +470,9 @@
       > div:nth-of-type(2)
         padding: 4rem 10rem 4rem 5rem
         
+        @media(max-width $screen-lg)
+          padding: 4rem 5rem
+
         @media(max-width $screen-xs)
           padding 2rem
 

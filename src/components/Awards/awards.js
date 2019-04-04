@@ -14,7 +14,7 @@ const Awards = ({
       <small>{date}</small>
       <h4>{name}</h4>
       <p>{title}</p>
-      <small>{category}</small>
+      <small>- {category}</small>
     </a>
   </div>
 );

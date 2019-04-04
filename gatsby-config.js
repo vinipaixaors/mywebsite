@@ -61,28 +61,21 @@ module.exports = {
         // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_PREVIEW_NAME",
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-web-font-loader',
-    //   options: {
-    //     google: {
-    //       families: ['Advent Pro', 'Droid Serif']
-    //     }
-    //   }
-    // },
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
           {
-            family: `Advent Pro`,
-            subsets: [`latin`],
+            family: `Ovo`,
+            // subsets: [`latin`],
+            // variants: [`300`, `400`, `700`]
           },
           {
-            family: `Droid Serif`,
-            variants: [`400`, `700`]
-          },
-        ],
-      },
+            family: `Josefin Sans`,
+            variants: [`300`, `400`, `600`, `700`]
+          }
+        ]
+      }
     },
     {
       resolve: 'gatsby-plugin-react-svg',
@@ -94,4 +87,4 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
   ],
-}
+};
