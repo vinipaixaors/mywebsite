@@ -21,12 +21,19 @@
           left: 50%;
           width 250px 
 
-          @media(max-width 600px)
+          @media(max-width $screen-sm)
             position: unset
             transform: unset
-            width 200px
+            max-width 380px
+            width: 100%
             margin 0 auto
             padding 2rem 0
+          
+          @media(max-width $screen-xs)
+            max-width 300px
+          
+          @media(max-width $screen-xxs)
+            max-width 220px
 
           > div
             overflow: initial !important
@@ -192,6 +199,9 @@
           margin 0
           padding 0
 
+          @media(max-width $screen-sm)
+            text-align left
+
           @media(max-width $screen-xs)
             text-align: center
             margin 0 auto 
@@ -214,10 +224,10 @@
               top -15px
 
               @media(max-width $screen-sm)
-                right 0
+                right unset
                 border-bottom 2px solid #979899
                 width 40px
-                left unset 
+                left 0
                 transform none
               
               @media(max-width $screen-xs)
