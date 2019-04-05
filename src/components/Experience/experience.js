@@ -11,7 +11,7 @@ const Experience = () => (
       <div className={s.container}>
         <div className={s.wrapper}>
           <div>
-            <div id={s.vini} className={[s.bannerImgRight, s.sticky].join(' ')}>
+            <div className={[s.bannerImgRight, s.sticky].join(' ')}>
               <h3>Experiência e Formação</h3>
               <small>Lugares por onde passei, atuei e aprendi.</small>
             </div>

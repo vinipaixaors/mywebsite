@@ -1,38 +1,36 @@
 import React from 'react';
-import propTypes  from 'prop-types';
 import s from "../../assets/styles/general/index.module.styl";
+import awardsList from "./data.json";
 
-const Awards = ({
-  link,
-  date,
-  name,
-  category,
-  title
-}) => (
-  <div className={s.item}>
-    <a href={link} target="_blank" rel="noopener noreferrer">
-      <small>{date}</small>
-      <h4>{name}</h4>
-      <p>{title}</p>
-      <small>- {category}</small>
-    </a>
-  </div>
+const Awards = () => (
+  <>
+    <section id="awards" className={s.sections}>
+      <div className={s.container}>
+        <div className={s.wrapper}>
+          <div>
+            <div className={[s.bannerImgRight, s.sticky].join(' ')}>
+              <h3>Prêmios</h3>
+              <small>Conquistas inesquecíveis</small>
+            </div>
+          </div>
+          <div className={s.awards}>
+            {awardsList.map((item) => (
+              <div key={item.name}>
+                <div className={s.item}>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    <small>{item.date}</small>
+                    <h4>{item.name}</h4>
+                    <p>{item.title}</p>
+                    <small>- {item.category}</small>
+                  </a>
+                </div> 
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  </>
 );
-
-Awards.propTypes = {
-  link: propTypes.string.isRequired,
-  date: propTypes.string.isRequired,
-  name: propTypes.string.isRequired,
-  category: propTypes.string,
-  title: propTypes.string.isRequired,
-};
-
-Awards.defaultProps = {
-  link: null,
-  date: null,
-  name: null,
-  category: null,
-  title: null,
-};
 
 export default Awards;

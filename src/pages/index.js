@@ -1,29 +1,14 @@
 import React from "react"
 // import { Link } from "gatsby"
 import Layout from "components/Layout"
-// import Footer from "components/Footer"
 import Image from "components/image"
 import SEO from "components/seo"
+import Introduction from "components/Introduction"
 import Awards from "components/Awards"
 import Expertise from "components/Expertise"
 import Skills from "components/Skills"
 import Experience from "components/Experience"
-
 import s from "assets/styles/general/index.module.styl"
-
-function yearsOld() {
-  const now = new Date();
-  const mes = now.getMonth();
-  const dia = now.getDate();
-
-  if(( mes > 10) && ( dia > 17)){
-    return now.getFullYear() - 1985;
-  } else if(mes > 11) {
-    return now.getFullYear() - 1985;
-  } else {
-    return now.getFullYear() - 1986;
-  }
-}
 
 const IndexPage = () => (
   <Layout>
@@ -94,114 +79,13 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section className={s.sections}>
-        <div className={s.container}>
-          <div className={s.wrapper}>
-            <div className={s.sticky}>
-              <div className={s.bannerImgRight}>
-                <h3>Intro</h3>
-                <small>Um pouco sobre meu <strong>perfil</strong></small>
-              </div>
-            </div>
-            <div>
-              <p className={s.firstParagraph}>
-                Me chamo Vinícius, tenho { yearsOld() } anos e trabalho na empresa <a href="https://www.metropoles.com">Metrópoles</a> como coordenador de tecnologia em Brasília-DF. 
-                Atuo com tecnologia a {new Date().getFullYear() - 2004} anos. Formado em design gráfico e estudante de engenharia de software. Conquistei <a href="#awards">três prêmios</a> nesses últimos anos.
-              </p>
-              <p>
-                Atualmente estou focado no desenvolvimento front-end para aplicações web e mobile.
-              </p>
-              <p>Possuo um perfil comunicativo, focado, responsável e engajado. Disposto a absorver novos desafios e muito interesse em novas tecnologias e tendências de mercado.</p>
-              <p>Confira algumas das minhas experiências: </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className={s.sections}>
-        <div className={s.container}>
-          <div className={s.wrapper}>
-            <div>
-              <div className={s.bannerImgRight}>
-                <h3>Experiência</h3>
-                <small>Ainda faltam muitas linhas de código</small>
-              </div>
-            </div>
-            <div>
-              <div className={s.media}>
-                <Expertise 
-                  numb="01"
-                  title="Front-End"
-                  description="A arte de juntar ótima experiência do usuário, boa navegação e tecnicas modernas de desenvolvimento para uma entrega eficiente e de alta performance.s"
-                />
-                <Expertise 
-                  numb="02"
-                  title="CMS WordPress"
-                  description="Vivencia no CMS mais presente na web. Usado da forma correta e com os recursos certos, o WP pode ser o CMS da sua empresa."
-                />
-                <Expertise 
-                  numb="03"
-                  title="Continuous Delivery"
-                  description="Todos os estágios do pipeline de produção até o lançamento do produto para o cliente."
-                />
-                <Expertise 
-                  numb="04"
-                  title="Métricas Web"
-                  description="Certificado pelo Google em 2015, possuo um nível avançado em métricas web. Ferramentas: Google Analytics e Data Studio; ChartBeat;"
-                />
-                <Expertise 
-                  numb="05"
-                  title="Design Gráfico"
-                  description="Tendo Design Gráfico como a primeira formação, trabalho com ferramentas Adobe CC com foco na web."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <Introduction />
+      <Expertise />
       <Skills />
       <Experience />
-
-      <section id="awards" className={s.sections}>
-        <div className={s.container}>
-          <div className={s.wrapper}>
-            <div>
-              <div className={s.bannerImgRight}>
-                <h3>Prêmios</h3>
-                <small>Conquistas inesquecíveis</small>
-              </div>
-            </div>
-            <div className={s.awards}>
-              <Awards 
-                link="https://www.metropoles.com/materias-especiais/a-tragedia-de-mariana-mg-vista-pela-janela-do-trem-efvm"
-                date="2019"
-                name="2° Prêmio de Jornalismo ANPTrilhos"
-                category="Mídia Digital"
-                title="A tragédia de Mariana (MG) vista pela janela do trem"
-              />
-              <Awards 
-                link="https://www.metropoles.com/materias-especiais/mulheres-caminhoneiras-superam-preconceitos-pelas-estradas-do-brasil-2"
-                date="2018"
-                name="25º Prêmio CNT de Jornalismo"
-                category="Internet"
-                title="Caminhoneiras, codinome coragem"
-              />
-              <Awards 
-                link="https://especiais.correiobraziliense.net.br/ciclovias-em-busca-de-uma-cidade/"
-                date="2017"
-                name="24º Prêmio CNT de Jornalismo"
-                category="Meio ambiente e transporte"
-                title="Ciclovias em busca de uma cidade"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Awards />
     </div>
-    {/* <Footer /> */}
-    {/* <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>{`(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-1606235389650616",enable_page_level_ads: true})`} </script>     */}
+    
   </Layout>
 )
 

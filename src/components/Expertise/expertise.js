@@ -1,55 +1,35 @@
 import React from 'react';
-import propTypes  from 'prop-types';
 import s from "../../assets/styles/general/index.module.styl";
+import expertiseList from './data.json';
 
-
-// REFATORAR PARA UM COMPONENT NO LAYOUT
-// ------------
-// Instruções:  Criar um componente único na home chamado 'Experience' que contenha uma lista (array de objetos)
-//              outro component que vai renderizar
-
-// const  experienceList = [
-//   {
-//     title: 'Front-End Avançado',
-//     description: 'A arte de juntar ótima experiência do usuário, boa navegação, tecnicas modernas de desenvolvimento para uma entrega eficiente e de alta qualidade.'
-//   },
-//   {
-//     title: 'WORDPRESS',
-//     description: 'Conhecimento avançado no CMS mais utilizado no mundo.'
-//   },
-//   {
-//     title: 'MÉTRICAS WEB',
-//     description: 'Certificado pelo Google em 2015, possuo um nível avançado em acompanhamento de métricas. Utilizo as seguintes ferramentas: Google Analytics e Data Studio; ChartBeat;'
-//   },
-//   {
-//     title: 'DESIGN GRÁFICO',
-//     description: 'Trabalho com ferramentas Adobe CC e formação na área.'
-//   }
-// ];
-
-
-const Expertise = ({
-  numb,
-  title,
-  description,
-}) => (
-  <div className={s.item}>
-    <span>{numb}</span>
-    <h3>{title}</h3>
-    <p>{description}</p>
-  </div>
+const Expertise = () => (
+  <>
+    <section className={s.sections}>
+      <div className={s.container}>
+        <div className={s.wrapper}>
+          <div>
+            <div className={[s.bannerImgRight, s.sticky].join(' ')}>
+              <h3>Experiência</h3>
+              <small>Ainda faltam muitas linhas de código</small>
+            </div>
+          </div>
+          <div>
+            <div className={s.media}>
+              {expertiseList.map((item) => (
+                <div key={item.numb}>
+                  <div className={s.item}>
+                    <span>{item.numb}</span>
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </>
 );
-
-Expertise.propTypes = {
-  numb: propTypes.string.isRequired,
-  title: propTypes.string.isRequired,
-  description: propTypes.string.isRequired,
-};
-
-Expertise.defaultProps = {
-  num: null,
-  title: null,
-  description: null,
-};
 
 export default Expertise;

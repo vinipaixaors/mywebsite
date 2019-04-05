@@ -21,6 +21,9 @@
           height 100%
           display block
 
+          @media(max-width $screen-sm)
+            background-color: unset
+
   // Segundo Elemento
   &:nth-child(even)
     background-color $bg-second
@@ -191,8 +194,8 @@
       .wrapper
         > div:nth-child(2)
             padding 4rem 10rem 4rem 5rem
-
-            @media(max-width $screen-md)
+            
+            @media(max-width $screen-lg)
               padding 3rem 5rem
               
             @media(max-width 768px)
@@ -242,7 +245,7 @@
     .container
       .wrapper
         > div:nth-child(2)
-            padding: 2rem 5rem 4rem;
+            padding: 2rem 10rem 4rem 5rem;
 
             @media(max-width 768px)
               padding 2rem 3rem
@@ -308,9 +311,6 @@
   &:nth-child(5)
     .container
       .wrapper
-        #vini
-          position sticky
-          top 2rem
 
         > div:nth-child(2)
             padding 3rem 10rem 3rem 5rem

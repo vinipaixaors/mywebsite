@@ -86,7 +86,7 @@ const Skills = () => (
       <div className={s.container}>
         <div className={s.wrapper}>
           <div>
-            <div className={s.bannerImgRight}>
+            <div className={[s.bannerImgRight, s.sticky].join(' ')}>
               <h3>Habilidades</h3>
               <small>Linguagens, ferramentas e soluções</small>
             </div>
