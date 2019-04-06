@@ -1,4 +1,5 @@
 import React from "react"
+// import ReactDOM from 'react-dom'
 // import { Link } from "gatsby"
 import Layout from "components/Layout"
 import Image from "components/image"
@@ -9,6 +10,54 @@ import Expertise from "components/Expertise"
 import Skills from "components/Skills"
 import Experience from "components/Experience"
 import s from "assets/styles/general/index.module.styl"
+
+
+// window.onload = function (){
+//   pregressbar();
+// };
+
+// window.onload = () => { 
+//   console.log('Iniciou...');
+//   pregressbar();
+// }
+
+let ctrl = true;
+
+window.document.addEventListener('scroll', function(e){
+  if (ctrl){
+    var y = window.pageYOffset;
+    var element = document.querySelector('#box').offsetHeight;
+    
+    if(y > element) {
+      ctrl = false;
+      var animatedElement = document.querySelectorAll('.animateBar'); // Array de Divs .animateBar
+      // console.log(animatedElement);
+
+      
+      animatedElement.forEach(element => {
+        var valProgress = element.getAttribute('data-width');
+        element.setAttribute('style', `width: ${valProgress}%`);
+      });
+      
+      // animatedElement.map((item) => {
+      //   return (
+      //   );
+      //   // let valProgress = item.getAttribute('data-width');
+      //   // item.style.width = valProgress;
+        
+      // });
+      
+      
+    }
+  }
+});
+
+// function progressbar(){
+//   console.log('scroll...');
+//   // const y = window.scroll( function(e) {
+//   // });
+// }
+
 
 const IndexPage = () => (
   <Layout>

@@ -80,6 +80,7 @@ const  skillsList = [
 ];
 
 
+
 const Skills = () => (
   <>
     <section className={s.sections}>
@@ -97,7 +98,8 @@ const Skills = () => (
                 <div className={s.item} key={item.title}>
                   <h3><span>{item.size}</span><small>%</small> {item.title}</h3>
                   <div className={s.contentProgressBar}>
-                    <div className={s.progressBar} style={{width : item.size + '%' }}></div>
+                    {/* <div className={s.progressBar} style={{width : item.size + '%' }}></div> */}
+                    <div className={[s.progressBar, 'animateBar'].join(' ')} data-width={item.size} style={{width: '0'}}></div>
                   </div>
                 </div>
               ))}
