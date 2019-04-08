@@ -1,0 +1,77 @@
+[
+  {
+    "title" : "HTML",
+    "size" : "80"
+  },
+  {
+    "title" : "CSS",
+    "size" : "85",
+    "prop" : {
+      "1" : "Stylus",
+      "2" : "PostCSS",
+      "3" : "Sass",
+      "4" : "bootstrap",
+      "5" : "Bulma"
+    }
+  },
+  {
+    "title" : "Javascript",
+    "size" : "75"
+  },
+  {
+    "title" : "React",
+    "size" : "65"
+  },
+  {
+    "title" : "NodeJS",
+    "size" : "55"
+  },
+  {
+    "title" : "Gulp",
+    "size" : "80"
+  },
+  {
+    "title" : "Git",
+    "size" : "70"
+  },
+  {
+    "title" : "PHP",
+    "size" : "40"
+  },
+  {
+    "title" : "Python",
+    "size" : "30"
+  },
+  {
+    "title" : "Scrum",
+    "size" : "80"
+  },
+  {
+    "title" : "AWS",
+    "size" : "60"
+  },
+  {
+    "title" : "Google Analytics",
+    "size" : "90"
+  },
+  {
+    "title" : "SEO",
+    "size" : "90"
+  },
+  {
+    "title" : "Adobe XD",
+    "size" : "60"
+  },
+  {
+    "title" : "Adobe Illustrator",
+    "size" : "75"
+  },
+  {
+    "title" : "Adobe Photoshop",
+    "size" : "80"
+  },
+  {
+    "title" : "Zeplin",
+    "size" : "70"
+  }
+]
